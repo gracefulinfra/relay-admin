@@ -11,6 +11,16 @@
       "matchUpdateTypes": ["minor", "patch", "digest", "pin", "pinDigest"],
       "groupName": "non-major dependencies",
       "groupSlug": "non-major"
+    },
+    {
+      "description": "typescript-eslint 8.70.1 requires typescript <6.1.0 (ADR-0003 B10). Lift when it supports TS 7",
+      "matchPackageNames": ["typescript"],
+      "allowedVersions": "<6.1.0"
+    },
+    {
+      "description": "Keep Node type definitions on the runtime's major (Node 24 LTS)",
+      "matchPackageNames": ["@types/node"],
+      "allowedVersions": "<25"
     }
   ],
   "customManagers": [
